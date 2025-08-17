@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidde van Bavel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="public/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="public/favicon/android-chrome-192x192.png">
+</head>
+
+<body>
+  <header>
+    <div class="title-container">
+      <h1 id="title">Hidde van Bavel</h1>
+    </div>
+  </header>
+  <main>
+    <div class="columns" id="columns">
+      <section class="column">
+        <p>Hello!</p>
+        <p>
+          I'm a software developer based in Belgium, currently working at <a
+            href="https://www.pelckmansuitgevers.be/">Pelckmans Uitgevers</a> and also teaching high school informatics
+          on the side.
+        </p>
+        <p>
+          Beyond work, I'm interested in game design, reading, cooking, and growing food in my garden. If you're
+          interested in working together or want to know more, feel free to send me an <a
+            href="mailto:hiddevbavel@gmail.com">email</a> or contact me on social media. ☼
+        </p>
+      </section>
+      <section class="column">
+        <h2>Websites</h2>
+        <p>
+          On the side, I've created multiple websites, often with a CMS or webshop if requested. Here are a few
+          examples:
+        </p>
+        <ul>
+          <li><a href="https://govio.be/">govio.be</a> - A local youth center.</li>
+          <li><a href="https://haverklapbloemen.be/">haverklapbloemen.be</a> - A store for a florist.</li>
+          <li><a href="http://www.stalmoleneind.be/">stalmoleneind.be</a> - A farm and riding stable. </li>
+        </ul>
+        <h2>Games</h2>
+        <p>
+          I have participated in multiple game jams. All of these games were written in Lua. Here are a few successful
+          ones:
+        </p>
+        <ul>
+          <li><a href="https://www.rockpapershotgun.com/fishy-horror-and-noir-mysteries-7-day-roguelikes">Creek Hero</a>
+            – Roguelike about a fish, my most popular release.</li>
+          <li><a href="https://gamejolt.com/games/carcerato/127194">Carcerato</a> – A collaboration with my brother
+            about escaping a tower.</li>
+          <li><a
+              href="https://web.archive.org/web/20201031140118/http://ludumdare.com/compo/author/magmacrab/">Galeas</a>
+            – Ludum Dare entry about trading with a dubious theme.</li>
+        </ul>
+        <p>
+          More projects can be found on my <a href="https://github.com/hidde-vb">GitHub profile</a>.
+        </p>
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer-social">
+        <a href="https://github.com/hidde-vb" aria-label="GitHub" target="_blank" rel="noopener">
+          <img width="28" src="public/github.svg" alt="github">
+        </a>
+        <a href="https://bsky.app/profile/hiddevb.bsky.social" aria-label="Bluesky" target="_blank" rel="noopener">
+          <img width="28" src="public/bluesky.svg" alt="bluesky">
+        </a>
+        <a href="https://cubecobra.com/user/view/5e77695c7d65df45f52f54fc" aria-label="Bluesky" target="_blank"
+          rel="noopener">
+          <img width="28" src="public/cubecobra.svg" alt="cubecobra">
+        </a>
+      </div>
+      <p>&copy; Hidde van Bavel - 2025</p>
+    </footer>
+    <script>
+      // Fade in the whole page on load
+      window.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+          document.body.classList.add('fade-in');
+        }, 100);
+      });
+    </script>
+</body>
+<script>
+  // Make columns match the width of the header h1 (banner)
+  function setColumnsWidth() {
+    var banner = document.getElementById('title');
+    var columns = document.getElementById('columns');
+    if (banner && columns) {
+      columns.style.width = banner.offsetWidth + 'px';
+    }
+  }
+  window.addEventListener('DOMContentLoaded', setColumnsWidth);
+  window.addEventListener('resize', setColumnsWidth);
+</script>
+
+</html>

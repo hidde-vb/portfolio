@@ -1,0 +1,116 @@
+@font-face {
+  font-family: Basteleur;
+  src: url(fonts/Basteleur-Moonlight.woff);
+}
+@font-face {
+  font-family: Basteleur Bold;
+  src: url(fonts/Basteleur-Bold.woff);
+}
+
+@font-face {
+  font-family: faculty;
+  src: url(fonts/Faculty-Regular.ttf);
+}
+
+body {
+  font-family: faculty, system-ui, sans-serif;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #222;
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body.fade-in {
+  opacity: 1;
+}
+
+header {
+  padding: 20vh 0 2rem 4rem;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Basteleur", system-ui, sans-serif;
+}
+
+.title-container {
+  display: inline-block;
+  font-size: 4vw;
+  margin: 0;
+  font-weight: 800;
+  line-height: 0.6;
+  border-bottom: 4px solid #222;
+}
+
+.columns {
+  display: flex;
+  align-items: start;
+  gap: 4rem;
+  padding: 2rem 4rem;
+}
+
+.column {
+  flex: 1 1 0;
+}
+
+h2 {
+  display: inline-block;
+  font-size: 32px;
+  font-family: "Basteleur Bold", system-ui, sans-serif;
+  margin-bottom: .5rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 0.5em;
+}
+a {
+  color: #349d0a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #15720c;
+  text-decoration: underline;
+}
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 1em;
+  margin: 2rem 0 1rem 0;
+}
+
+.footer-social {
+  margin-bottom: 0.5em;
+}
+.footer-social a {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.footer-social svg {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.7em;
+  width: 1.7em;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 1rem;
+    text-align: left;
+  }
+  .title-container {
+    font-size: 6vw;
+    border-bottom-width: 2px;
+    line-height: 0.9;
+  }
+  .columns {
+    display: block;
+    padding: 0;
+  }
+}
