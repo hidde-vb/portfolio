@@ -31,7 +31,7 @@
         <p>
           Beyond work, I'm interested in game design, reading, cooking, and growing food in my garden. If you're
           interested in working together or want to know more, feel free to send me an <a
-            href="mailto:hiddevbavel@gmail.com">email</a> or contact me on social media. ☼
+            href="mailto:hiddevbavel@gmail.com">email</a> ☼
         </p>
       </section>
       <section class="column">
@@ -60,24 +60,13 @@
             – Ludum Dare entry about trading with a dubious theme.</li>
         </ul>
         <p>
-          More projects can be found on my <a href="https://github.com/hidde-vb">GitHub profile</a>.
+          More projects can be found on my <a href="https://github.com/hidde-vb"><img class="icon" width="20"
+              src="public/github.svg" alt="bluesky"> GitHub profile</a>.
         </p>
       </section>
     </div>
 
     <footer>
-      <div class="footer-social">
-        <a href="https://github.com/hidde-vb" aria-label="GitHub" target="_blank" rel="noopener">
-          <img class="footer-icon" width="28" src="public/github.svg" alt="github">
-        </a>
-        <a href="https://bsky.app/profile/hiddevb.bsky.social" aria-label="Bluesky" target="_blank" rel="noopener">
-          <img class="footer-icon" width="28" src="public/bluesky.svg" alt="bluesky">
-        </a>
-        <a href="https://cubecobra.com/user/view/5e77695c7d65df45f52f54fc" aria-label="Bluesky" target="_blank"
-          rel="noopener">
-          <img class="footer-icon" width="28" src="public/cubecobra.svg" alt="cubecobra">
-        </a>
-      </div>
       <p>&copy; Hidde van Bavel - 2025</p>
     </footer>
     <script>
@@ -87,19 +76,19 @@
           document.body.classList.add('fade-in');
         }, 100);
       });
+
+
+      // Make columns match the width of the header 
+      function setColumnsWidth() {
+        var banner = document.getElementById('title');
+        var columns = document.getElementById('columns');
+        if (banner && columns) {
+          columns.style.width = banner.offsetWidth + 'px';
+        }
+      }
+      window.addEventListener('DOMContentLoaded', setColumnsWidth);
+      window.addEventListener('resize', setColumnsWidth);
     </script>
 </body>
-<script>
-  // Make columns match the width of the header h1 (banner)
-  function setColumnsWidth() {
-    var banner = document.getElementById('title');
-    var columns = document.getElementById('columns');
-    if (banner && columns) {
-      columns.style.width = banner.offsetWidth + 'px';
-    }
-  }
-  window.addEventListener('DOMContentLoaded', setColumnsWidth);
-  window.addEventListener('resize', setColumnsWidth);
-</script>
 
 </html>

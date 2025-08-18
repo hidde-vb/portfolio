@@ -28,7 +28,7 @@ body.fade-in {
 }
 
 header {
-  padding: 20vh 0 2rem 4rem;
+  padding: 4rem 0 2rem 4rem;
   margin: 0;
 }
 
@@ -83,28 +83,6 @@ footer {
   color: #888;
   font-size: 1em;
   margin: 2rem 0 1rem 0;
-}
-
-.footer-social {
-  margin-bottom: 0.5em;
-}
-.footer-social a {
-  display: inline-block;
-  margin: 0 0.5em;
-}
-.footer-social svg {
-  display: inline-block;
-  vertical-align: middle;
-  height: 1.7em;
-  width: 1.7em;
-}
-
-.footer-icon {
-  transition: filter 0.2s;
-}
-
-.footer-icon:hover {
-  filter: drop-shadow(0 2px 6px #14720c8b);
 }
 
 @media (max-width: 600px) {
